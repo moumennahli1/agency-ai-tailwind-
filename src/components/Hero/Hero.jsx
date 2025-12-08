@@ -1,6 +1,6 @@
 import React from 'react'
 import group_profile from '../../assets/group_profile.png'
-import Hero_image from '../../assets/hero_img.png'
+import Hero_image from '../../assets/hero_img.jpg'
 import Bg_img from '../../assets/bgImage1.png'
 
 const Hero = () => {
