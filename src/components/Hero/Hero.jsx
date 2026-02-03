@@ -22,38 +22,22 @@ const Hero = () => {
         <div className='absolute bottom-20 right-20 w-1.5 h-1.5 bg-green-500 rounded-full animate-ping' style={{animationDelay: '0.5s'}}></div>
       </div>
 
-      <div className='relative z-10 flex flex-col items-center justify-center min-h-full px-6 pt-2.5'>
-        {/* Unique trust indicator */}
-        <div className='mb-12 group cursor-pointer'>
-          <div className='relative inline-flex items-center gap-4 bg-white/80 backdrop-blur-md border border-slate-200 shadow-lg p-4 rounded-2xl hover:scale-105 hover:shadow-xl transition-all duration-500'>
-            <div className='relative '>
-              <img src={group_profile} className='h-6 w-auto' alt="Group profile" />
-              <div className='absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse'></div>
-            </div>
-            <p className='text-slate-700 text-sm font-medium tracking-wide'>Trusted by 1,000+ companies</p>
-            <div className='w-2 h-2 bg-slate-500 rounded-full animate-pulse'></div>
-          </div>
-        </div>
-        
+      <div className='relative z-10 flex flex-col items-center justify-center min-h-full px-6 pt-2.5'>        
         {/* Elegant main heading */}
         <h1 className='text-5xl md:text-6xl lg:text-7xl font-black text-center mb-8 leading-tight'>
-          <span className='block text-slate-900 mb-2 tracking-tight'>Turning imagination</span>
+          <span className='block text-slate-900 mb-2 tracking-tight'>مركز ال ياسر </span>
           <span className='block bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 bg-clip-text text-transparent'>
-            into digital impact
-          </span>
-          <span className='block text-slate-600 text-2xl md:text-3xl lg:text-4xl font-light mt-4'>
-            ✨
+            لترميم و تجميل الاسنان
           </span>
         </h1>
         
         {/* Refined subtitle */}
-        <div className='relative mb-16 group'>
-          <p className='text-lg md:text-xl text-slate-600 text-center max-w-2xl leading-relaxed font-light tracking-wide'>
-            Creating meaningful connections and turning big ideas into 
-            <span className='text-slate-800 font-medium'> interactive digital experiences</span> 
-            that inspire and engage.
+        <div className='relative mb-2 group'>
+          <p className='text-lg md:text-xl text-blue-600 text-center max-w-2xl leading-relaxed font-light tracking-wide'>
+            ضحك 
+            <span className='text-slate-800 font-medium'> و بلاما تحشم</span> 
           </p>
-          <div className='absolute -inset-1 bg-gradient-to-r from-slate-200/30 to-slate-300/30 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+          <div className='absolute -inset-1 bg-gradient-to-r text-slate-800  to-slate-300/30 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
         </div>
         
         {/* Sophisticated image presentation */}

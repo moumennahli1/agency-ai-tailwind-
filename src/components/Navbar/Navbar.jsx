@@ -1,20 +1,20 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import './Navbar.css'
-import logo from '../../assets/logo.svg'
-import menuIcon from '../../assets/menu_icon.svg'
-import closeIcon from '../../assets/close_icon.svg'
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import menuIcon from "../../assets/menu_icon.svg";
+import closeIcon from "../../assets/close_icon.svg";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
@@ -23,39 +23,25 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src={logo} alt="Logo" className="h-8 w-auto" />
+              <img src={logo} alt="Logo" className="h-16 w-auto" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
               >
                 Home
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link 
-                to="/services" 
+              <Link
+                to="/our-work"
                 className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
               >
                 Services
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link 
-                to="/our-work" 
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
-              >
-                Our Work
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link 
-                to="/" 
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
-              >
-                Contact Us
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </div>
@@ -90,7 +76,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+      <div
+        className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
+      >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-slate-200">
           <Link
             to="/"
@@ -100,25 +88,11 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/services"
-            className="text-slate-700 hover:text-slate-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
-            onClick={closeMenu}
-          >
-            Services
-          </Link>
-          <Link
             to="/our-work"
             className="text-slate-700 hover:text-slate-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
             onClick={closeMenu}
           >
-            Our Work
-          </Link>
-          <Link
-            to="/contact"
-            className="text-slate-700 hover:text-slate-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
-            onClick={closeMenu}
-          >
-            Contact Us
+            Services
           </Link>
           <div className="px-3 py-2">
             <Link to="/contact" onClick={closeMenu}>
@@ -130,7 +104,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
