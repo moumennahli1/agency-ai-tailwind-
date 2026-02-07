@@ -219,7 +219,7 @@ const Contact = () => {
                         </h4>
                         <div className="space-y-1">
                           <p className="text-slate-600 font-medium">
-                            morocco, مديونة 20670
+                            الدار البيضاء حي مولي رشيد مشروع الفضل{" "}
                           </p>
                           <p className="text-slate-500 text-sm"> المغرب</p>
                         </div>
@@ -281,7 +281,7 @@ const Contact = () => {
                       </span>
                     </div>
                     <span className="font-bold text-slate-900">
-                       9:00 - 14:30 
+                      9:00 - 14:30
                     </span>
                   </div>
 
