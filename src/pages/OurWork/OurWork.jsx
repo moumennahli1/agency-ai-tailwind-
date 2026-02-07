@@ -116,7 +116,9 @@ const OurWork = () => {
                 تركيبات متحركة سيليكون تلبيسات الأسنان سيراميك و زيركون
               </p>
               <a
-                href="/contact"
+                href="https://wa.me/212680009596?text=salam%20Yasser,%20bghit%20les%20detais%20ktar%20ela%20lkhidma%20dialkom"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-slate-900 text-white px-6 py-3 text-sm font-semibold hover:bg-slate-800 transition-colors shadow-xl"
               >
                 ابدأ محادثة

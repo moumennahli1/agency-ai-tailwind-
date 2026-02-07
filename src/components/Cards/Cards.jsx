@@ -118,7 +118,9 @@ const Cards = () => {
               نحن متخصصون في جعل اسنانك تبدو بشكل جيد
             </p>
             <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/212680009596?text=salam%20Yasser,%20bghit%20les%20detais%20ktar%20ela%20lkhidma%20dialkom" target="_blank" rel="noopener noreferrer">
                   اتصل بنا
+                  </a>
             </button>
           </div>
         </div>
