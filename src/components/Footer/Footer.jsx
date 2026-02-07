@@ -165,7 +165,7 @@ const Footer = () => {
               <div>
                 <p className="text-sm text-slate-400">Address</p>
                 <p className="text-white">
-                  الدار البيضاء حي مولي رشيد مشروع الفضل
+                  الدار البيضاء حي مولي رشيد مشروع الفضل{" "}
                 </p>
               </div>
             </div>
