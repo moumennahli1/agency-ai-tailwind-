@@ -75,7 +75,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/abidi_yasser1"
+                  href="https://www.instagram.com/centre_dentaire_yasser"
                   className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-50 transition-all duration-200 hover:scale-105"
                   aria-label="Instagram"
                   target="_blank"
